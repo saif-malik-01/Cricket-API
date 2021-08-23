@@ -58,4 +58,10 @@ async function handlePast(href,id) {
 
 }
 
-setInterval(dbConnector,10000);
+
+
+function automateTimer(){
+  setInterval(dbConnector,10000);
+}
+
+module.exports = automateTimer;

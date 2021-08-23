@@ -59,5 +59,11 @@ const getDateTime = async (url)=>{
     return [series,venue,date_time];
 }
 
-getHtml()
-// setInterval(getHtml,21600000);
+
+ 
+ function urlTimer(){
+    getHtml();
+ }
+ setInterval(getHtml,21600000);
+
+ module.exports = urlTimer;

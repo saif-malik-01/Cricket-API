@@ -13,7 +13,7 @@ async function trashCollector(){
  
 }
 
-trashCollector();
+
 
 function handleData(past,live,overview){
     let message =0;
@@ -49,3 +49,8 @@ function handleData(past,live,overview){
 }
 
 
+function trashTimer(){
+    setInterval(trashCollector,10000);
+}
+
+module.exports = trashTimer;
